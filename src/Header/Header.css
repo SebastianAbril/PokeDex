@@ -1,0 +1,36 @@
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 2vh;
+    width: 100%;
+}
+.HeaderAbout{
+    font-size: 20px;
+    color: rgb(107, 104, 104);
+    font-weight: 700;
+}
+.HeaderAbout:hover{
+    color: black;
+    cursor: pointer;
+}
+.HeaderTitle{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+.HeaderMode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 8vw;
+    font-size: 20px;
+    color: rgb(107, 104, 104);
+    font-weight: 700;
+}
+.HeaderModeDark:hover{
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
