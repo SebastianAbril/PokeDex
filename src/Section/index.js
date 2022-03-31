@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import "./Section.css";
-import SectionCard from '../SectionCard';
+import {SectionCard} from '../SectionCard';
 
 
 const URL ="https://pokeapi.co/api/v2/";
