@@ -9,7 +9,7 @@
 .HeaderAbout{
     font-size: 20px;
     color: rgb(107, 104, 104);
-    font-weight: 700;
+    font-weight: 700;  
 }
 .HeaderAbout:hover{
     color: black;
@@ -30,6 +30,11 @@
     font-weight: 700;
 }
 .HeaderModeDark:hover{
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+.HeaderModeLight:hover{
     color: black;
     font-weight: 700;
     cursor: pointer;
