@@ -15,11 +15,11 @@ function PokemonCard({name, url}){
 
     return (
         <div className='PokemonCard'>
-            <div className='SectionCardTitle'>
-                {name} <span className="SectionCardNumber"> #701</span>
+            <div className='PokemonCardTitle'>
+                {name} <span className="PokemonCardNumber"> #701</span>
             </div>
             
-            {pokemon && <img className='SectionCardImage' src={pokemon.sprites['front_default']} alt="fenix" />}
+            {pokemon && <img className='PokemonCardImage' src={pokemon.sprites['front_default']} alt="fenix" />}
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
 import {PokemonCard} from '../../components/PokemonCard/PokemonCard';
+import "./PokemonListScreen.css";
 
-const URL ="https://pokeapi.co/api/v2/pokemon?limit=5";
+const URL ="https://pokeapi.co/api/v2/pokemon?limit=12";
 
 
 export const PokemonListScreen = () => {
