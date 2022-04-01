@@ -1,40 +1,36 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import "./Section.css";
 import {SectionCard} from '../SectionCard';
 
 
-const URL ="https://pokeapi.co/api/v2/";
+const URL ="https://pokeapi.co/api/v2/pokemon/";
 
 
 
 
 function Section(){
 
-    const [info, setInfo] = useState({});
+    const [pokemon, setPokemon] = useState(["bulbasaur", "charmander"]);
 
-    const [pokemon, setPokemon] = useState({});
+    useEffect(()=>{},[])
 
-    const FetchData = () =>{
+   /*  const FetchData = () =>{
         fetch(URL)
         .then( (response)=> response.json())
-        .then( (data) => setInfo(data) )
-        console.log(info.pokemon);
-
-        fetch(info)
-        .then( (response)=> response.json())
         .then( (data) => setPokemon(data) )
-        console.log(pokemon)
-    }
+        console.log(info.pokemon);
+    } */
 
-    
     return(
         <div className="Section">
-            <button onClick={FetchData}  className="Go">GO!</button>
+            {pokemon.map( p=> (
+                <div key={p}>{p}</div>
+            ))}
         
 
     )
-            <SectionCard />
+            <SectionCard pokemon={pokemon} />
             <SectionCard />
             <SectionCard />
             <SectionCard />
