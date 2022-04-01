@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import {Header} from './Header/index';
-import {Nav} from './Nav/index';
-import {Section} from './Section/index';
-
+import {Header} from './components/Header/index';
+import {Nav} from './components/Nav/index';
+import {PokemonListScreen} from './screens/PokemonListScreen/PokemonListScreen';
 
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
-      <Section />
+      <PokemonListScreen />
       
     </div>
   );
