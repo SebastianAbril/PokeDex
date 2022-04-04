@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+integracion continua / despliegue continua
+CI/CD
+
+
+DEV PEPITO --> COMMIT Y PUSH --> REPO
+
+SERVIDOR CI --> DETECTA CUANDO HAY PUSH
+    EJECUTA SERIE DE TAREAS SETPS
+
+    1) COMPILAR LA APP 
+    1) TEST
+    *) EJECUTAR AUTOMATIZA
+    *) ESLINT
+    *) DEPLOY DE LA APP UN SERVER
+
+
+SERVIDOR CI
+    JENKINS
+    GITLAB CI
+    GITHUB ACTIONS
+
+
+    .github/workflows
