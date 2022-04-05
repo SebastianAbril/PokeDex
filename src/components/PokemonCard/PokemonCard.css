@@ -1,8 +1,12 @@
 .PokemonCard{
     background-color: #ebe8e8;
     margin: 10px;
-    width: 20%;
+    width: 12%;
     border-radius: 10%;
+    cursor: pointer;
+}
+.PokemonCard:hover{
+    background-color: rgb(208, 225, 208);
 }
 .PokemonCardImage{
     display: flex;

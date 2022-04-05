@@ -20,7 +20,7 @@ function PokemonCard({ name, url }) {
       </div>
 
       {pokemon && (
-        <img className="PokemonCardImage" src={pokemon.sprites['front_default']} alt="fenix" />
+        <img className="PokemonCardImage" src={pokemon.sprites['front_default']} alt="Image" />
       )}
     </div>
   );
