@@ -23,3 +23,9 @@
 .Nav_logo{
     width: 100px; 
 }
+
+.Nav_options li:hover{
+    color:red;
+    cursor: pointer;
+    
+}
