@@ -17,7 +17,14 @@ export const PokemonListScreen = () => {
     <div className="PokemonListScreen">
       {paginatedPokemons &&
         paginatedPokemons.results.map((pokemon) => {
-          return <PokemonCard key={pokemon.name} name={pokemon.name} url={pokemon.url} />;
+          return (
+            <PokemonCard
+              onClick={() => console.log('hola')}
+              key={pokemon.name}
+              name={pokemon.name}
+              url={pokemon.url}
+            />
+          );
         })}
     </div>
   );

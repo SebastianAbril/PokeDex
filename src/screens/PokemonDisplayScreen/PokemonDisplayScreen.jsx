@@ -1,3 +1,5 @@
+import './PokemonDisplayScreen.css';
+
 const PokemonDisplayScreen = () => {
   return (
     <div className="PokemonDisplayScreen">

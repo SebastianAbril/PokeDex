@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-
 import './PokemonCard.css';
 
 //sprites.front_default
 
-function PokemonCard({ name, url }) {
+function PokemonCard({ name, url, onClick }) {
   const [pokemon, setPokemon] = useState();
 
   useEffect(() => {
@@ -14,13 +13,13 @@ function PokemonCard({ name, url }) {
   }, [url]);
 
   return (
-    <div className="PokemonCard">
+    <div onClick={onClick} className="PokemonCard">
       <div className="PokemonCardTitle">
         {name} <span className="PokemonCardNumber"> #701</span>
       </div>
 
       {pokemon && (
-        <img className="PokemonCardImage" src={pokemon.sprites['front_default']} alt="Image" />
+        <img className="PokemonCardImage" src={pokemon.sprites['front_default']} alt="Imageok" />
       )}
     </div>
   );
