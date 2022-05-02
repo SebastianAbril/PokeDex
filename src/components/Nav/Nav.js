@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Nav.css';
 
 function Nav() {
@@ -12,11 +13,29 @@ function Nav() {
         />
       </figure>
       <ul className="Nav_options">
-        <li>Home</li>
-        <li>Pokédex</li>
-        <li>Legendaries</li>
-        <li>Documentation</li>
-        <li>About us</li>
+        <li>
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          {' '}
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/pepito">
+            Pokédex
+          </NavLink>
+        </li>
+        <li>
+          {' '}
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/legendaries">
+            Legendaries
+          </NavLink>
+        </li>
+        <li>
+          {' '}
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/documentation">
+            Documentation
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

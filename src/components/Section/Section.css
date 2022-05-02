@@ -1,4 +1,40 @@
 .Section{
-    background-color: rgba(255, 200, 0, 0.911);
+    background-color: #F5DB13;
     height: 100%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Section_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+.Section_title{
+    font-size: 7.2rem;
+    font-weight: 500;
+    
+}
+.Section_title span{
+    font-weight: bold;
+}
+.Section_text{
+    margin-top: 60px;
+    font-size: 2rem;
+}
+.Section_button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-top: 60px;
+    background-color: rgb(157, 211, 157);
+}
+
+
+.pikachu{
+    width: 400px;
 }

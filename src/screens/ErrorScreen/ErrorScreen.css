@@ -1,0 +1,45 @@
+.ErrorScreen{
+    background-color: #D93E30;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ErrorScreenImg{
+    width: 690;
+    z-index: 2;
+    position: relative;
+    top: 30px;
+}
+.Error404{
+    font-size: 700px;
+    z-index: 1;
+    font-weight: 700;
+    color:#702a23;
+    position: absolute;
+    
+}
+.ErrorText{
+    font-size:48px;
+    font-weight: bold;
+}
+.ErrorText span{
+    color: white;
+}
+.ErrorButton{ 
+    padding: 10px 50px;
+    background-color: #F2CB07;
+    box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.1);
+    border: 0px solid white;
+    border-radius: 11px;
+    font-size: 23px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.ErrorButton a{
+    text-decoration: none;
+    color: black;
+}
