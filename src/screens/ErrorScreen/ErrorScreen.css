@@ -23,6 +23,7 @@
     
 }
 .ErrorText{
+    padding-top: 30px;
     font-size:48px;
     font-weight: bold;
 }
@@ -30,6 +31,7 @@
     color: white;
 }
 .ErrorButton{ 
+    margin-top: 10px;
     padding: 10px 50px;
     background-color: #F2CB07;
     box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.1);
