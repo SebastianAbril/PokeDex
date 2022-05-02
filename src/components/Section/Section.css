@@ -5,13 +5,14 @@
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .Section_main{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    margin-left: 5vw;
 }
 .Section_title{
     font-size: 7.2rem;
@@ -33,8 +34,8 @@
     margin-top: 60px;
     background-color: rgb(157, 211, 157);
 }
-
-
-.pikachu{
-    width: 400px;
+.Banner{
+    width: 700px;
+    position: absolute;
+    right: 0px;
 }

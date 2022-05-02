@@ -1,4 +1,5 @@
 import '../Section/Section.css';
+import Banner from './Banner.png';
 
 const Section = () => {
   return (
@@ -16,12 +17,8 @@ const Section = () => {
         <button className="Section_button">See pokemons</button>
       </main>
 
-      <figure className="Section_imgs_container">
-        <img
-          className="pikachu"
-          src="https://static.wikia.nocookie.net/doblaje/images/a/aa/Pikachu_XY.png/revision/latest?cb=20161002184039&path-prefix=es"
-          alt="pikachu"
-        />
+      <figure className="Container_Banner">
+        <img className="Banner" src={Banner} alt="annerfa" />
       </figure>
     </section>
   );
