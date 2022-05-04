@@ -6,6 +6,7 @@ import { PokemonListScreen } from './screens/PokemonListScreen/PokemonListScreen
 import { HomeScreen } from './screens/HomeScreen/HomeScreen';
 import { PokemonDisplayScreen } from './screens/PokemonDisplayScreen/PokemonDisplayScreen';
 import { ErrorScreen } from './screens/ErrorScreen/ErrorScreen';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/pokemonDisplay" element={<PokemonDisplayScreen />} />
           <Route path="*" element={<ErrorScreen />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

@@ -1,4 +1,50 @@
+
 .HomeScreen{
+    background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    position: absolute;
+    top: 93px;
+    bottom: 50px; 
+    padding-top: 50px;
+    
+}
+.Section_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    position: relative;
+    left: 10vw;
+}
+.Section_title{
+    font-size: 7.2rem;
+    font-weight: 400;
+    
+}
+.Section_title span{
+    font-weight: bold;
+}
+.Section_text{
+    margin-top: 60px;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+.Section_button{
+    width: 250px;
+    padding: 15px 30px 20px 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 2.3rem;
+    background: #73D677;
+    border: 0px solid white;
+    box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Banner{
+    max-width: 650px;
+    right: 0px;
 }
