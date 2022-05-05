@@ -17,7 +17,7 @@ function Nav() {
         </li>
         <li>
           {' '}
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/pepito">
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/PokeDex">
             Pokédex
           </NavLink>
         </li>

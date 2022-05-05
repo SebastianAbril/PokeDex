@@ -15,7 +15,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<HomeScreen />} />
-          <Route path="/pepito" element={<PokemonListScreen />} />
+          <Route path="/PokeDex" element={<PokemonListScreen />} />
           <Route path="/pokemonDisplay" element={<PokemonDisplayScreen />} />
           <Route path="*" element={<ErrorScreen />} />
         </Routes>
