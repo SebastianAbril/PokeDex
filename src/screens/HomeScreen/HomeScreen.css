@@ -45,6 +45,22 @@
     cursor: pointer;
 }
 .Banner{
-    max-width: 650px;
     right: 0px;
 }
+
+
+
+@media (max-width: 768px){
+    .HomeScreen{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .Banner{
+        order: 1;
+    }
+    .Section_main{
+        order: 2;
+    }
+}
+

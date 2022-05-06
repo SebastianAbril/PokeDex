@@ -1,9 +1,13 @@
 import './HomeScreen.css';
-import Banner from './Banner.png';
+/* import { Pepito } from '../../components/Pepito/Pepito'; */
+import MobileBanner from './MobileBanner.png';
+import TabletBanner from './TabletBanner.png';
+import DesktopBanner from './Banner.png';
 
 const HomeScreen = () => {
   return (
     <section className="HomeScreen">
+      {/* <Pepito /> */}
       <main className="Section_main">
         <p className="Section_title">
           {' '}
@@ -17,11 +21,22 @@ const HomeScreen = () => {
         <button className="Section_button">See pokemons</button>
       </main>
 
-      <figure className="Container_Banner">
-        <img className="Banner" src={Banner} alt="annerfa" />
-      </figure>
+      <picture className="Container_Banner">
+        <source media="(min-width: 1024px)" srcSet={DesktopBanner} />
+        <source media="(min-width: 768px)" srcSet={TabletBanner} />
+
+        <img className="Banner" src={MobileBanner} alt="MOBILEs IMAGE" />
+      </picture>
     </section>
   );
 };
 
 export { HomeScreen };
+
+{
+  /* <picture>
+<source media="(min-width:1300px)" srcset="./imgs/large.jpg"> <!-- VIEWPORT MAS LARGO VA ARRIBA -->
+<source media="(min-width:1000px)" srcset="./imgs/medium.jpg">
+<img src="./imgs/small.jpg" alt="she">
+</picture> */
+}
