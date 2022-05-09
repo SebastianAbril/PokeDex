@@ -4,7 +4,10 @@ import './SearchBar.css';
 function SearchBar() {
   return (
     <div className="SearchBar">
-      <input className="SearchBar" type="text" placeholder="Find your pokémon..." />
+      <p>
+        800 <span>Pokemons</span> for you to choose your favorite
+      </p>
+      <input className="SearchBarInput" type="text" placeholder="Find your pokémon..." />
     </div>
   );
 }
