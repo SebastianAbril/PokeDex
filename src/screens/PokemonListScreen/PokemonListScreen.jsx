@@ -7,6 +7,7 @@ const URL = 'https://pokeapi.co/api/v2/pokemon?limit=14';
 
 export const PokemonListScreen = () => {
   const [paginatedPokemons, setPaginatedPokemons] = useState();
+  const [searchedPokemon, setSearchedPokemon] = useState('');
 
   useEffect(() => {
     fetch(URL)
@@ -16,7 +17,11 @@ export const PokemonListScreen = () => {
 
   return (
     <div className="PokemonListScreen">
-      <SearchBar />
+      <SearchBar
+        onChange={(event) => {
+          setSearchedPokemon(event);
+        }}
+      />
       <main className="PokemonList">
         {paginatedPokemons &&
           paginatedPokemons.results.map((pokemon) => {

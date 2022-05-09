@@ -22,26 +22,29 @@
 .PokemonCard{
     background-color: #ebe8e8;
     margin: 10px;
-    width: 12%;
+    width: 30%;
     border-radius: 10%;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.PokemonCardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .PokemonCard:hover{
     background-color: rgb(208, 225, 208);
 }
 .PokemonCardImage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 10vw;
 }
-.PokemonCardTitle{
+.PokemonCardInfoTitle{
     font-size: 22px;
     font-weight: 700;
-    margin: 5%;
-    text-align: center;
 }
-.PokemonCardTitle span{
-    font-size: 18px;
-    color: rgb(148, 145, 145);
+.PokemonCardInfoStats{
+    list-style: none;
 }
