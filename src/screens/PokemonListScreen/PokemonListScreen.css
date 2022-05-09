@@ -1,4 +1,11 @@
 .PokemonListScreen{
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.PokemonList{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
