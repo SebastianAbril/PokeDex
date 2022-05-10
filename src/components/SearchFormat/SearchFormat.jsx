@@ -4,7 +4,7 @@ import './SearcFormat.css';
 function SearchFormat() {
   return (
     <form className="SearchFormat">
-      <label></label>
+      <label type="datetime-local"></label>
       <label></label>
       <label></label>
     </form>
