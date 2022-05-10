@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.css';
-import Logo from './Logo.png';
+import logo from './logo.png';
 
 function Nav() {
   return (
     <nav className="Nav">
       <figure className="Nav_logo_container">
-        <img className="Nav_logo" src={Logo} alt="pokemon" />
+        <img className="Nav_logo" src={logo} alt="pokemon" />
       </figure>
       <ul className="Nav_options">
         <li>
