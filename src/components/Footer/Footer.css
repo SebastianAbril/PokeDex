@@ -5,7 +5,7 @@
     background: #F2B807;
     padding: 10px;
     width: 100%;
-    position: absolute;
+    position: sticky;
     bottom: 0px;
     height: 50px;
     left: 0px;

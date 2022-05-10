@@ -46,12 +46,16 @@
 }
 .Banner{
     right: 0px;
+    width: 45vw;
+    max-width: 793px;
 }
 
 
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
+    
     .HomeScreen{
+        background: red;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -62,5 +66,31 @@
     .Section_main{
         order: 2;
     }
+    .Section_text{
+        margin-top: 60px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .Banner{
+        right: 0px;
+        width: 400px;
+    }
 }
+
+@media (max-width: 428px){
+    .HomeScreen{
+        background: blue;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }  
+    .Banner{
+        order: 1;
+    }
+    .Section_main{
+        order: 2;
+    }
+} 
+
+
 

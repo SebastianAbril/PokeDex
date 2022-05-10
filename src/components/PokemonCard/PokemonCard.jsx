@@ -14,12 +14,19 @@ function PokemonCard({ name, url, onClick }) {
 
   return (
     <div onClick={onClick} className="PokemonCard">
-      <div className="PokemonCardTitle">
-        {name} <span className="PokemonCardNumber"> #701</span>
+      <div className="PokemonCardInfo">
+        <div className="PokemonCardInfoTitle">{name}</div>
+        <ul className="PokemonCardInfoStats">
+          <li>Ataque</li>
+          <li>Defensa</li>
+          <li>Tipo</li>
+        </ul>
       </div>
 
       {pokemon && (
-        <img className="PokemonCardImage" src={pokemon.sprites['front_default']} alt="Imageok" />
+        <picture>
+          <img className="PokemonCardImage" src={pokemon.sprites['front_default']} alt="Imageok" />
+        </picture>
       )}
     </div>
   );

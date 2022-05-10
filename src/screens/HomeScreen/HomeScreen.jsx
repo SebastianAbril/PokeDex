@@ -24,7 +24,6 @@ const HomeScreen = () => {
       <picture className="Container_Banner">
         <source media="(min-width: 1024px)" srcSet={DesktopBanner} />
         <source media="(min-width: 768px)" srcSet={TabletBanner} />
-
         <img className="Banner" src={MobileBanner} alt="MOBILEs IMAGE" />
       </picture>
     </section>
