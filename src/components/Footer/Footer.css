@@ -1,24 +1,23 @@
-.Footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: #F2B807;
-    padding: 10px;
-    width: 100%;
-    position: sticky;
-    bottom: 0px;
-    height: 50px;
-    left: 0px;
-    
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #f2b807;
+  padding: 10px;
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  height: 50px;
+  left: 0px;
 }
 
-.Footer p:nth-child(1){
-    font-size: 2rem;
-    font-family: Karla;
-    font-weight: 400;
+.Footer p:nth-child(1) {
+  font-size: 2rem;
+  font-family: Karla;
+  font-weight: 400;
 }
-.Footer p:nth-child(2){
-    font-size: 2rem;
-    font-family: Karla;
-    font-weight: 700;
+.Footer p:nth-child(2) {
+  font-size: 2rem;
+  font-family: Karla;
+  font-weight: 700;
 }
