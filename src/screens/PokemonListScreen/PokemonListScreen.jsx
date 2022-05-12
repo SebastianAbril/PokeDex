@@ -3,14 +3,13 @@ import { PokemonCard } from '../../components/PokemonCard/PokemonCard';
 import './PokemonListScreen.css';
 import { SearchBar } from '../../components/SearchBar/SearchBar';
 
-const URL = 'https://pokeapi.co/api/v2/pokemon?limit=100000';
-/* let NumberOfPokemons; */
+const URL = 'https://pokeapi.co/api/v2/pokemon?limit=100';
 
 export const PokemonListScreen = () => {
   const [paginatedPokemons, setPaginatedPokemons] = useState();
   const [searchedPokemon, setSearchedPokemon] = useState('');
 
-  console.log(paginatedPokemons);
+  /* console.log(paginatedPokemons); */
   useEffect(() => {
     fetch(URL)
       .then((response) => response.json())
