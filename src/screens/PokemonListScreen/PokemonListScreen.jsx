@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { PokemonCard } from '../../components/PokemonCard/PokemonCard';
 import './PokemonListScreen.css';
 import { SearchBar } from '../../components/SearchBar/SearchBar';
+import { SearchFormat } from '../../components/SearchFormat/SearchFormat';
 
-const URL = 'https://pokeapi.co/api/v2/pokemon?limit=100';
+const URL = 'https://pokeapi.co/api/v2/pokemon?limit=900';
 
 export const PokemonListScreen = () => {
   const [paginatedPokemons, setPaginatedPokemons] = useState();
@@ -19,6 +20,7 @@ export const PokemonListScreen = () => {
   return (
     <div className="PokemonListScreen">
       <SearchBar onSearch={(value) => setSearchedPokemon(value)} />
+      <SearchFormat />
       <main className="PokemonList">
         {paginatedPokemons &&
           paginatedPokemons.results
