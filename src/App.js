@@ -7,6 +7,7 @@ import { HomeScreen } from './screens/HomeScreen/HomeScreen';
 import { PokemonDisplayScreen } from './screens/PokemonDisplayScreen/PokemonDisplayScreen';
 import { ErrorScreen } from './screens/ErrorScreen/ErrorScreen';
 import { Footer } from './components/Footer/Footer';
+import { LegendariesScreen } from './screens/LegendariesScreen/LegendariesScreen';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/PokeDex" element={<PokemonListScreen />} />
           <Route path="/pokemonDisplay" element={<PokemonDisplayScreen />} />
+          <Route path="/legendaries" element={<LegendariesScreen />} />
           <Route path="*" element={<ErrorScreen />} />
         </Routes>
         <Footer />
