@@ -4,7 +4,7 @@ import './SearchFormat.css';
 function SearchFormat() {
   return (
     <form className="SearchFormat">
-      <select className="SearchFormatType" name="Type">
+      <select className="SearchFormatType SearchFormatButton" name="Type">
         <option disabled hidden selected>
           Type
         </option>
@@ -13,16 +13,26 @@ function SearchFormat() {
         <option value="Electric">Electric</option>
         <option value="Water">Water</option>
       </select>
-      <label>Attack</label>
-      <div>
-        <input type="checkbox"></input>
-        <input type="checkbox"></input>
-        <input type="checkbox"></input>
-      </div>
 
-      <label htmlFor="experience">
-        <input htmlFor="experience" type="text" />
-      </label>
+      <select className="SearchFormatAttack SearchFormatButton" name="Attack">
+        <option disabled hidden selected>
+          Attack
+        </option>
+        <option value="Fire">1000</option>
+        <option value="Normal">1500</option>
+        <option value="Electric">2000</option>
+        <option value="Water">2500</option>
+      </select>
+
+      <select className="SearchFormatExperience SearchFormatButton" name="Experience">
+        <option disabled hidden selected>
+          Experiencie
+        </option>
+        <option value="Fire">1000</option>
+        <option value="Normal">2000</option>
+        <option value="Electric">3000</option>
+        <option value="Water">4000</option>
+      </select>
     </form>
   );
 }

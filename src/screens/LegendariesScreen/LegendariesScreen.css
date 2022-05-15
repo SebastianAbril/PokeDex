@@ -1,3 +1,9 @@
 .LegendariesScreen{
     background-color: #212121 ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 93px;
+    color: white;
+    font-size: 20rem;
 }
