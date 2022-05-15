@@ -1,6 +1,12 @@
 import { Nav } from '../Nav/Nav';
 import { Footer } from '../Footer/Footer';
 
-const PageLayout = () => {
-  return <></>;
+export const PageLayout = ({ withNav = true, withFooter = true, children }) => {
+  return (
+    <>
+      {withNav && <Nav />}
+      {children}
+      {withFooter && <Footer />}
+    </>
+  );
 };

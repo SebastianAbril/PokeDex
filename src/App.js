@@ -1,27 +1,59 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Nav } from './components/Nav/Nav';
+import { PageLayout } from './components/PageLayout/PageLayout';
 import { PokemonListScreen } from './screens/PokemonListScreen/PokemonListScreen';
 import { HomeScreen } from './screens/HomeScreen/HomeScreen';
 import { PokemonDisplayScreen } from './screens/PokemonDisplayScreen/PokemonDisplayScreen';
 import { ErrorScreen } from './screens/ErrorScreen/ErrorScreen';
-import { Footer } from './components/Footer/Footer';
 import { LegendariesScreen } from './screens/LegendariesScreen/LegendariesScreen';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav />
         <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/PokeDex" element={<PokemonListScreen />} />
-          <Route path="/pokemonDisplay" element={<PokemonDisplayScreen />} />
-          <Route path="/legendaries" element={<LegendariesScreen />} />
-          <Route path="*" element={<ErrorScreen />} />
+          <Route
+            path="/"
+            element={
+              <PageLayout>
+                <HomeScreen />
+              </PageLayout>
+            }
+          />
+          <Route
+            path="/PokeDex"
+            element={
+              <PageLayout>
+                <PokemonListScreen />
+              </PageLayout>
+            }
+          />
+          <Route
+            path="/pokemonDisplay"
+            element={
+              <PageLayout>
+                <PokemonDisplayScreen />
+              </PageLayout>
+            }
+          />
+          <Route
+            path="/legendaries"
+            element={
+              <PageLayout>
+                <LegendariesScreen />
+              </PageLayout>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <PageLayout withFooter={false}>
+                <ErrorScreen />
+              </PageLayout>
+            }
+          />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
