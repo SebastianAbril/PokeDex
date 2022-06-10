@@ -1,5 +1,5 @@
 .PokemonListScreen {
-  position: absolute;
+  position: relative;
   top: 93px;
   width: 100%;
   display: flex;
@@ -13,4 +13,14 @@
   width: 90%;
   flex-wrap: wrap;
   margin-top: 2%;
+}
+.buttonsContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.button{
+  font-size: 1.5rem;
 }

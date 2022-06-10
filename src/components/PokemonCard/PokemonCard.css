@@ -23,6 +23,8 @@
   background-color: #ebe8e8;
   margin: 10px;
   width: 30%;
+  max-width: 500px;
+  max-height: 120px;
   border-radius: 10%;
   cursor: pointer;
   display: flex;
@@ -39,7 +41,7 @@
   background-color: rgb(208, 225, 208);
 }
 .PokemonCardImage {
-  width: 10vw;
+  width: 8vw;
 }
 .PokemonCardInfoTitle {
   font-size: 22px;

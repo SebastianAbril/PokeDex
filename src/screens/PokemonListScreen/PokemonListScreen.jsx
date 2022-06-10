@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { PokemonCard } from '../../components/PokemonCard/PokemonCard';
 import './PokemonListScreen.css';
 import { SearchBar } from '../../components/SearchBar/SearchBar';
-import { SearchFormat } from '../../components/SearchFormat/SearchFormat';
+/* import { SearchFormat } from '../../components/SearchFormat/SearchFormat'; */
 import { usePaginationList } from './usePaginationList';
 
 const URL = 'https://pokeapi.co/api/v2/pokemon?limit=900';
@@ -21,7 +21,7 @@ export const PokemonListScreen = () => {
   return (
     <div className="PokemonListScreen">
       <SearchBar onSearch={(value) => setSearchedPokemon(value)} />
-      <SearchFormat />
+      {/* <SearchFormat /> */}
       <main className="PokemonList">
         {data &&
           data.map((pokemon) => {
@@ -35,8 +35,14 @@ export const PokemonListScreen = () => {
             );
           })}
       </main>
-      <button onClick={prev}>atras</button>
-      <button onClick={next}>next</button>
+      <div className="buttonsContainer">
+        <button className="prevButton button" onClick={prev}>
+          Back
+        </button>
+        <button className="nextButton button" onClick={next}>
+          Next
+        </button>
+      </div>
     </div>
   );
 };

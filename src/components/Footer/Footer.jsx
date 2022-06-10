@@ -19,8 +19,11 @@ const FooterContainer = styled.div`
   width: 100%;
   position: fixed;
   bottom: 0px;
+
+  /* position: fixed;
+  bottom: 0px;
   height: 50px;
-  left: 0px;
+  left: 0px; */
 `;
 
 const FooterText = styled.p`
