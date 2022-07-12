@@ -1,3 +1,0 @@
-# PokeDex
-
-PokeDex App

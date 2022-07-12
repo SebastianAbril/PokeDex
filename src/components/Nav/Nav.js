@@ -30,7 +30,7 @@ function Nav() {
         <li>
           {' '}
           <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/documentation">
-            Documentation
+            About Me
           </NavLink>
         </li>
       </ul>

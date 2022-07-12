@@ -16,7 +16,7 @@ const HomeScreen = () => {
         </p>
         <p className="Section_text">
           You can know the type of Pokemon,
-          <br /> its strengths, disadvantages and <br /> abilities
+          <br /> its strengths, disadvantages and <br /> abilities.
         </p>
         <button className="Section_button">See pokemons</button>
       </main>

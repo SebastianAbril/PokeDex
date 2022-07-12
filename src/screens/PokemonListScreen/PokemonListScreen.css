@@ -20,7 +20,21 @@
   width: 100%;
   justify-content: center;
   margin-bottom: 80px;
+  margin-top: 20px;
+}
+.buttonsContainer button:nth-child(1){
+  margin-right: 10px;
+}
+.buttonsContainer button:nth-child(2){
+  margin-left: 10px;
 }
 .button{
+  cursor: pointer;
+  padding: 8px;
   font-size: 1.5rem;
+  border: grey;
+  border-radius: 5px;
+}
+.button:hover{
+  border: 0.5px solid black;
 }
