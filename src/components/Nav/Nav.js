@@ -29,7 +29,7 @@ function Nav() {
         </li>
         <li>
           {' '}
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/documentation">
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/aboutme">
             About Me
           </NavLink>
         </li>

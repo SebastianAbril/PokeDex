@@ -8,11 +8,11 @@ https://sebastianabril.github.io/PokeDex/
 
 ### Components
 
-    Footer, Nav, PageLayout, Search.
+Footer, Nav, PageLayout, Search.
 
 ### Screens
 
-    HomeScreen,PokemonList, LegendariesScreen,ErrorScreen.
+HomeScreen,PokemonList, LegendariesScreen,ErrorScreen.
 
 ## Available Scripts
 

@@ -8,6 +8,7 @@
   top: 93px;
   bottom: 40px;
   padding-top: 50px;
+  height: calc(100vh - 136px);
 }
 .Section_main {
   display: flex;
@@ -44,7 +45,7 @@
 .Banner {
   right: 0px;
   width: 45vw;
-  max-width: 793px;
+  max-width: 600px;
 }
 
 @media (max-width: 1024px) {

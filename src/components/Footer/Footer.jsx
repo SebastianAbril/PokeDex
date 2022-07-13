@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <FooterContainer>
+    <FooterContainer backgroundColor={props.backgroundColor}>
       <FooterText fontWeight={400}>Made by Sebastian Abril</FooterText>
       <FooterText fontWeight={700}> Visit my WebPage</FooterText>
     </FooterContainer>
@@ -14,7 +14,7 @@ const FooterContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: #f2b807;
+  background: ${(props) => props.backgroundColor};
   padding: 10px;
   width: 100%;
   position: fixed;
