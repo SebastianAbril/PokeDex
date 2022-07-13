@@ -6,7 +6,6 @@ import { PokemonListScreen } from './screens/PokemonListScreen/PokemonListScreen
 import { HomeScreen } from './screens/HomeScreen/HomeScreen';
 import { PokemonDisplayScreen } from './screens/PokemonDisplayScreen/PokemonDisplayScreen';
 import { ErrorScreen } from './screens/ErrorScreen/ErrorScreen';
-import { LegendariesScreen } from './screens/LegendariesScreen/LegendariesScreen';
 import { AboutmeScreen } from './screens/AboutmeScreen/AboutmeScreen';
 function App() {
   return (
@@ -37,14 +36,7 @@ function App() {
               </PageLayout>
             }
           />
-          <Route
-            path="/legendaries"
-            element={
-              <PageLayout FooterBackgroundColor="#f2b807">
-                <LegendariesScreen />
-              </PageLayout>
-            }
-          />
+
           <Route
             path="/aboutme"
             element={

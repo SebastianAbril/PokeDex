@@ -21,12 +21,7 @@ function Nav() {
             Pokédex
           </NavLink>
         </li>
-        <li>
-          {' '}
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/legendaries">
-            Legendaries
-          </NavLink>
-        </li>
+
         <li>
           {' '}
           <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/aboutme">
