@@ -15,8 +15,8 @@ const AboutmeScreen = () => {
             <img className="Picture" src={MyDog} alt="MyDog" />
           </picture>
           <div className="ButtonsContainer">
-            <button>←</button>
-            <button>→</button>
+            {/* <button>←</button>
+            <button>→</button> */}
           </div>
         </div>
       </div>
