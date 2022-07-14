@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PokeDex/static/css/main.f4a66494.css",
+    "main.css": "/PokeDex/static/css/main.cd6257c6.css",
     "main.js": "/PokeDex/static/js/main.a7089ef4.js",
     "static/js/787.e81ffcc9.chunk.js": "/PokeDex/static/js/787.e81ffcc9.chunk.js",
     "static/media/TeamRocket.png": "/PokeDex/static/media/TeamRocket.798a5adf2e13daeedff6.png",
@@ -9,12 +9,12 @@
     "static/media/TabletBanner.png": "/PokeDex/static/media/TabletBanner.494d87b9705976ea965f.png",
     "static/media/MobileBanner.png": "/PokeDex/static/media/MobileBanner.b2130c4df846e1bd3bca.png",
     "index.html": "/PokeDex/index.html",
-    "main.f4a66494.css.map": "/PokeDex/static/css/main.f4a66494.css.map",
+    "main.cd6257c6.css.map": "/PokeDex/static/css/main.cd6257c6.css.map",
     "main.a7089ef4.js.map": "/PokeDex/static/js/main.a7089ef4.js.map",
     "787.e81ffcc9.chunk.js.map": "/PokeDex/static/js/787.e81ffcc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4a66494.css",
+    "static/css/main.cd6257c6.css",
     "static/js/main.a7089ef4.js"
   ]
 }
